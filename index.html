@@ -7,14 +7,24 @@
     <title>Wonderlust Travel- Destination Majorca</title>
 </head>
 <body>
-    <a href=""></a>
+    <a href="#plan-your-trip" class="sr-only">Skipt to Plan your Trip</a>
+    <a href="#testimonials" class="sr-only">Skip to Testimonials</a>
+    <a href="#about-your-destination" class="sr-only">Skip to About your Destination</a>
+    <a href="#contact-us" class="sr-only">Skip to Contact Us</a>
+
+
+    <!-- Skip to "main content"
+    Skip to "plan your trip"
+    Skip to "testimonials"
+    Skip to "about your destination"
+    Skip to "contact us" -->
     <header>
         Destination Majorca
         Let Wonderlust Travel help you plan the trip of your dreams!
         Specializing in unforgettable experiences, we offer curated trips to the breathtaking island of Majorca, a hidden gem in the Mediterranean. Whether you crave sun-drenched beaches, charming villages, or thrilling outdoor adventures, our expert team will craft the perfect itinerary tailored just for you.
     </header>
     <nav>
-        Main Navigation
+        <h1>Main Navigation</h1>
         <input type="checkbox" id="dropdown">
         <label for="dropdown"><span></span></label>
         <ul>
@@ -29,7 +39,7 @@
     </nav>
     <main>
         <article>
-            Majorca
+            <h2>Majorca</h2>
             <section id="intro">
 
                 Introduction
@@ -37,11 +47,17 @@
                 <div>
                 <!-- BRYAN CODE -->
                 <picture>
-                    <source srcset="" media="()">
-                    <source srcset="" media="()">
-                    <source srcset="" media="()">
-                    <img src="" alt="">
+                    <source srcset="images/majorca-beach-horizontal-l.jpg" media="(min-width:1280x)">
+                    <source srcset="images/majorca-beach-vertical-m.jpg" media="(max-width:920px)">
+                    <source srcset="images/majorca-beach-square-s.jpg" media="(max-width:404px)">
+                    <img src="images/majorca-beach-square-s.jpg" alt="Photo of a sunset at the beach">
                 </picture>
+                <!-- <picture>
+                    <source srcset="" media="(min-width:1280x)">
+                    <source srcset="" media="(max-width:920px)">
+                    <source srcset="" media="(max-width:404px)">
+                    <img src="" alt="">
+                </picture> -->
                 <!-- BRYAN CODE -->
                 <!--Responsive Image for Art Direction
                     images/majorca-beach-square-s.jpg
@@ -54,7 +70,7 @@
                 </div>
             </section>
             <section id="plan-your-trip">
-                Plan Your Trip
+                <h3>Plan Your Trip</h3>
 
                 <section class="plan">
                     How to Get There
@@ -94,16 +110,16 @@
                 </section>
             </section>
             <section id="testimonials">
-                Testimonials
+                <h3>Testimonials</h3>
 
                 <section>
                     <!-- BRYAN CODE -->
-                    <picture>
-                        <source srcset="" media="()">
-                        <source srcset="" media="()">
-                        <source srcset="" media="()">
-                        <img src="" alt="">
-                    </picture>
+                <picture>
+                    <source srcset="images/miranda-blake-L.png" media="(min-width:1280x)">
+                    <source srcset="images/miranda-blake-M.png" media="(max-width:920px)">
+                    <source srcset="images/miranda-blake-S.png" media="(max-width:404px)">
+                    <img src="images/miranda-blake-L.png" alt="">
+                </picture>
                     <!-- BRYAN CODE -->
                     <!--Responsive Image for resolution switching
                         images/miranda-blake-L.png" 
@@ -123,10 +139,10 @@
                 <section>
                     <!-- BRYAN CODE -->
                     <picture>
-                        <source srcset="" media="()">
-                        <source srcset="" media="()">
-                        <source srcset="" media="()">
-                        <img src="" alt="">
+                        <source srcset="images/max-winter-L.png" media="(min-width:1280x)">
+                        <source srcset="images/max-winter-M.png" media="(max-width:920px)">
+                        <source srcset="images/max-winter-S.png" media="(max-width:404px)">
+                        <img src="images/max-winter-L.png" alt="">
                     </picture>
                     <!-- BRYAN CODE -->                    
                     <!--Responsive Image for resolution switching
@@ -147,11 +163,11 @@
                 <section>
                     <!-- BRYAN CODE -->
                     <picture>
-                        <source srcset="" media="()">
-                        <source srcset="" media="()">
-                        <source srcset="" media="()">
-                        <img src="" alt="">
-                    </picture>                    
+                        <source srcset="images/ines-villegoes-L.png" media="(min-width:1280x)">
+                        <source srcset="images/ines-villegoes-M.png" media="(max-width:920px)">
+                        <source srcset="images/ines-villegoes-S.png" media="(max-width:404px)">
+                        <img src="images/ines-villegoes-L.png" alt="">
+                    </picture>             
                     <!-- BRYAN CODE -->
                     <!--Responsive Image for resolution switching
                         images/ines-villegoes-L.png
@@ -172,10 +188,10 @@
                 <section>
                     <!-- BRYAN CODE -->
                     <picture>
-                        <source srcset="" media="()">
-                        <source srcset="" media="()">
-                        <source srcset="" media="()">
-                        <img src="" alt="">
+                        <source srcset="images/carmen-lorenzo-L.png" media="(min-width:1280x)">
+                        <source srcset="images/carmen-lorenzo-M.png" media="(max-width:920px)">
+                        <source srcset="images/carmen-lorenzo-S.png" media="(max-width:404px)">
+                        <img src="images/carmen-lorenzo-L.png" alt="">
                     </picture>
                     <!-- BRYAN CODE -->                    
                     <!--Responsive Image for resolution switching
@@ -195,7 +211,7 @@
                 </section>
             </section>
             <section id="about-your-destination">
-                About Your Destination
+                <h3>About Your Destination</h3>
 
                 <section>
                     Size
@@ -258,27 +274,67 @@
         <section id="contact-us">
             <!-- BRYAN CODE -->
             <form action="" method="POST">
-                <label for="name">First Name<span class="required">*</span></label>
-                <input type="text" name="name" id="name" required>
-                <label for="">Last Name<span class="required">*</span></label>
-                <input type="text" name="lastname" id="lastname" required>
-                <label for="">Email<span class="required">*</span></label>
-                <input type="email" name="email" id="email" required>
-                <label for="phone">Phone<span class="required">*</span></label>
-                <input type="tel" name="phone" id="phone" required>
-                <fieldset>
+                <div>
+                    <label for="name">First Name<span class="required">*</span></label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div>
+                    <label for="">Last Name<span class="required">*</span></label>
+                    <input type="text" name="lastname" id="lastname" required>
+                </div>
+                <div>
+                    <label for="">Email<span class="required">*</span></label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div>
+                    <label for="phone">Phone<span class="required">*</span></label>
+                    <input type="tel" name="phone" id="phone" required>
+                </div>
+                <fieldset id="preferred-contact">
                     <legend>Preferred Contact Method<span class="required">*</span></legend>
-                    <input type="radio" name="contact_method" id="email_contact" required>
-                    <label for="email_contact">Email</label>
-                    <input type="radio" name="contact_method" id = "text_contact">
-                    <label for="text_contact">Text</label>
-                    <input type="radio" name="contact_method" id="phone_contact">
-                    <label for="phone_contact">Phone</label>
+                    <div>
+                        <input type="radio" name="contact_method" id="email_contact" required>
+                        <label for="email_contact">Email</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="contact_method" id = "text_contact">
+                        <label for="text_contact">Text</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="contact_method" id="phone_contact">
+                        <label for="phone_contact">Phone</label>
+                    </div>
+                </fieldset>
+                <fieldset id="destination">
+                    <legend>Destination<span class="required">*</span></legend>
+                    <select id="select-destination">
+                        <option>Choose</option>
+                        <option>Barcelona</option>
+                        <option>Granada</option>
+                        <option>Ibiza</option>
+                        <option>Madrid</option>
+                        <option>Majorca</option>
+                        <option>Seville</option>
+                        <option>Tenerife</option>
+                        <option>Valencia</option>
+                        <option>Other</option>
+                    </select>
+                </fieldset>
+                <fieldset id="travelTime">
+                    <legend>Travel Time<span>*</span></legend>
+                    <select id="select-travel-time">
+                        <option>Choose</option>
+                        <option>Fall</option>
+                        <option>Winter</option>
+                        <option>Spring</option>
+                        <option>Summer</option>
+                        <option>Flexible</option>
+                    </select>
                 </fieldset>
                 <input type="submit" value="Submit" id="submit">
             </form>
             <!-- BRYAN CODE -->
-            Contact Us <span id="required">(*required)</span>
+            <!-- Contact Us <span id="required">(*required)</span>
             
                 <div>
                     <label>First Name<span>*</span></label>
@@ -339,9 +395,9 @@
                 </fieldset>
                 <input>
             
-        </section>
+        </section> -->
         <section id="legal">
-            Legal
+            <h2>Legal</h2>
             <small>Copyright 2021 Wonderlust</small>
             <a href="#">Privacy Statement</a>
             <a href="#">Terms of Service</a>
